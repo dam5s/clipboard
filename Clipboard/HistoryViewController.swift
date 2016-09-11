@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HistoryViewController.swift
 //  Clipboard
 //
 //  Created by Damien Le Berrigaud on 9/10/16.
@@ -8,7 +8,9 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class HistoryViewController: NSViewController {
+
+    var clipboardHistory: ClipboardHistory! = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +23,4 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
-
 }
-
