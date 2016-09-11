@@ -12,15 +12,13 @@ class HistoryViewController: NSViewController {
 
     var clipboardHistory: ClipboardHistory! = nil
 
+    @IBOutlet var arrayController: NSArrayController!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
-    override var representedObject: AnyObject? {
-        didSet {
-        // Update the view, if already loaded.
-        }
+    override func viewWillAppear() {
+        arrayController.addObjects(clipboardHistory.getItems())
     }
 }

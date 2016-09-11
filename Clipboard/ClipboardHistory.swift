@@ -19,6 +19,10 @@ class ClipboardHistory {
         self.pasteBoard = NSPasteboard.generalPasteboard()
     }
 
+    func getItems() -> Array<String> {
+        return Array(pasteBoardHistory);
+    }
+
     @objc
     func checkPasteBoardForNewContent() {
         pasteBoard.pasteboardItems!.forEach { item in

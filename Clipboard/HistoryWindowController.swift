@@ -13,6 +13,7 @@ class HistoryWindowController : NSWindowController {
     override func showWindow(sender: AnyObject?) {
         self.window!.center()
         self.window!.makeKeyAndOrderFront(nil)
+        NSApp.activateIgnoringOtherApps(true)
 
         super.showWindow(sender)
     }
