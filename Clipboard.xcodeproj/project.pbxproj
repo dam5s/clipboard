@@ -11,21 +11,13 @@
 		1F10169B1D846B9B0045B050 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F10169A1D846B9B0045B050 /* HistoryViewController.swift */; };
 		1F10169D1D846B9B0045B050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F10169C1D846B9B0045B050 /* Assets.xcassets */; };
 		1F1016A01D846B9B0045B050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F10169E1D846B9B0045B050 /* Main.storyboard */; };
-		1F1016AB1D846B9B0045B050 /* ClipboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1016AA1D846B9B0045B050 /* ClipboardTests.swift */; };
-		1F1016B61D846B9B0045B050 /* ClipboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1016B51D846B9B0045B050 /* ClipboardUITests.swift */; };
 		1F1016C61D84AB920045B050 /* HistoryWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1016C51D84AB920045B050 /* HistoryWindowController.swift */; };
 		1F1016C81D85A2F10045B050 /* ClipboardHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1016C71D85A2F10045B050 /* ClipboardHistory.swift */; };
+		1FDA53981D8637B6000A9619 /* ClipboardHistoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA53971D8637B6000A9619 /* ClipboardHistoryTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		1F1016A71D846B9B0045B050 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1F10168D1D846B9B0045B050 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1F1016941D846B9B0045B050;
-			remoteInfo = Clipboard;
-		};
-		1F1016B21D846B9B0045B050 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1F10168D1D846B9B0045B050 /* Project object */;
 			proxyType = 1;
@@ -42,15 +34,12 @@
 		1F10169F1D846B9B0045B050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F1016A11D846B9B0045B050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F1016A61D846B9B0045B050 /* ClipboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F1016AA1D846B9B0045B050 /* ClipboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardTests.swift; sourceTree = "<group>"; };
 		1F1016AC1D846B9B0045B050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F1016B11D846B9B0045B050 /* ClipboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F1016B51D846B9B0045B050 /* ClipboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardUITests.swift; sourceTree = "<group>"; };
-		1F1016B71D846B9B0045B050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F1016C31D846D290045B050 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1F1016C41D846DDB0045B050 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1F1016C51D84AB920045B050 /* HistoryWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryWindowController.swift; sourceTree = "<group>"; };
 		1F1016C71D85A2F10045B050 /* ClipboardHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClipboardHistory.swift; sourceTree = "<group>"; };
+		1FDA53971D8637B6000A9619 /* ClipboardHistoryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClipboardHistoryTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,13 +57,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F1016AE1D846B9B0045B050 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,7 +65,6 @@
 			children = (
 				1F1016971D846B9B0045B050 /* Clipboard */,
 				1F1016A91D846B9B0045B050 /* ClipboardTests */,
-				1F1016B41D846B9B0045B050 /* ClipboardUITests */,
 				1F1016961D846B9B0045B050 /* Products */,
 				1F1016C41D846DDB0045B050 /* LICENSE */,
 				1F1016C31D846D290045B050 /* README.md */,
@@ -95,7 +76,6 @@
 			children = (
 				1F1016951D846B9B0045B050 /* Clipboard.app */,
 				1F1016A61D846B9B0045B050 /* ClipboardTests.xctest */,
-				1F1016B11D846B9B0045B050 /* ClipboardUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,19 +97,10 @@
 		1F1016A91D846B9B0045B050 /* ClipboardTests */ = {
 			isa = PBXGroup;
 			children = (
-				1F1016AA1D846B9B0045B050 /* ClipboardTests.swift */,
+				1FDA53971D8637B6000A9619 /* ClipboardHistoryTest.swift */,
 				1F1016AC1D846B9B0045B050 /* Info.plist */,
 			);
 			path = ClipboardTests;
-			sourceTree = "<group>";
-		};
-		1F1016B41D846B9B0045B050 /* ClipboardUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1F1016B51D846B9B0045B050 /* ClipboardUITests.swift */,
-				1F1016B71D846B9B0045B050 /* Info.plist */,
-			);
-			path = ClipboardUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,24 +141,6 @@
 			productReference = 1F1016A61D846B9B0045B050 /* ClipboardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1F1016B01D846B9B0045B050 /* ClipboardUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1F1016C01D846B9B0045B050 /* Build configuration list for PBXNativeTarget "ClipboardUITests" */;
-			buildPhases = (
-				1F1016AD1D846B9B0045B050 /* Sources */,
-				1F1016AE1D846B9B0045B050 /* Frameworks */,
-				1F1016AF1D846B9B0045B050 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1F1016B31D846B9B0045B050 /* PBXTargetDependency */,
-			);
-			name = ClipboardUITests;
-			productName = ClipboardUITests;
-			productReference = 1F1016B11D846B9B0045B050 /* ClipboardUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,10 +155,6 @@
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					1F1016A51D846B9B0045B050 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 1F1016941D846B9B0045B050;
-					};
-					1F1016B01D846B9B0045B050 = {
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = 1F1016941D846B9B0045B050;
 					};
@@ -226,7 +175,6 @@
 			targets = (
 				1F1016941D846B9B0045B050 /* Clipboard */,
 				1F1016A51D846B9B0045B050 /* ClipboardTests */,
-				1F1016B01D846B9B0045B050 /* ClipboardUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,13 +190,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F1016A41D846B9B0045B050 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1F1016AF1D846B9B0045B050 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -273,15 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F1016AB1D846B9B0045B050 /* ClipboardTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1F1016AD1D846B9B0045B050 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1F1016B61D846B9B0045B050 /* ClipboardUITests.swift in Sources */,
+				1FDA53981D8637B6000A9619 /* ClipboardHistoryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,11 +225,6 @@
 			isa = PBXTargetDependency;
 			target = 1F1016941D846B9B0045B050 /* Clipboard */;
 			targetProxy = 1F1016A71D846B9B0045B050 /* PBXContainerItemProxy */;
-		};
-		1F1016B31D846B9B0045B050 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1F1016941D846B9B0045B050 /* Clipboard */;
-			targetProxy = 1F1016B21D846B9B0045B050 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -444,30 +372,6 @@
 			};
 			name = Release;
 		};
-		1F1016C11D846B9B0045B050 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ClipboardUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.damo.osx.ClipboardUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Clipboard;
-			};
-			name = Debug;
-		};
-		1F1016C21D846B9B0045B050 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ClipboardUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.damo.osx.ClipboardUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Clipboard;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -487,6 +391,7 @@
 				1F1016BC1D846B9B0045B050 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F1016BD1D846B9B0045B050 /* Build configuration list for PBXNativeTarget "ClipboardTests" */ = {
 			isa = XCConfigurationList;
@@ -495,14 +400,7 @@
 				1F1016BF1D846B9B0045B050 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		1F1016C01D846B9B0045B050 /* Build configuration list for PBXNativeTarget "ClipboardUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1F1016C11D846B9B0045B050 /* Debug */,
-				1F1016C21D846B9B0045B050 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

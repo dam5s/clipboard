@@ -11,11 +11,12 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    private let clipboardHistory = ClipboardHistory(maxSize: 10, pasteBoard: NSPasteboard.generalPasteboard())
+
     @IBOutlet var menu: NSMenu!
 
     private var statusItem: NSStatusItem! = nil
     private var timer: NSTimer! = nil
-    private var clipboardHistory: ClipboardHistory = ClipboardHistory(maxSize: 10)
     private var historyWindowController: HistoryWindowController! = nil
 
 

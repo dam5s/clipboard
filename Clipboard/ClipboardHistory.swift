@@ -12,24 +12,27 @@ class ClipboardHistory {
 
     var maxSize: Int
     var pasteBoard: NSPasteboard
-    var pasteBoardHistory: Set<String> = []
+    var pasteBoardHistory: Array<String> = []
 
-    init (maxSize: Int) {
-        self.maxSize = maxSize;
-        self.pasteBoard = NSPasteboard.generalPasteboard()
+    init (maxSize: Int, pasteBoard: NSPasteboard) {
+        self.maxSize = maxSize
+        self.pasteBoard = pasteBoard
     }
 
     func getItems() -> Array<String> {
-        return Array(pasteBoardHistory);
+        return Array(pasteBoardHistory)
     }
 
     @objc
     func checkPasteBoardForNewContent() {
         pasteBoard.pasteboardItems!.forEach { item in
-            let content = item.stringForType(NSPasteboardTypeString)
 
-            if content != nil {
-                pasteBoardHistory.insert(content!)
+            if let content = item.stringForType(NSPasteboardTypeString) {
+                if let index = pasteBoardHistory.indexOf(content) {
+                    pasteBoardHistory.removeAtIndex(index)
+                }
+
+                pasteBoardHistory.append(content)
             }
         }
 
