@@ -20,6 +20,6 @@ class HistoryViewController: NSViewController {
 
     override func viewWillAppear() {
         arrayController.remove(self)
-        arrayController.addObjects(clipboardHistory.getItems())
+        arrayController.addObjects(clipboardHistory.getItems().reverse())
     }
 }
